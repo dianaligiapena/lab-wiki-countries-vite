@@ -7,13 +7,15 @@ function CountriesList( { countries } ) {
     <div className="col-5"  >
         <h1>CountriesList</h1>
 
-        <div className='list-group'>
+        <div className='list-group'> 
+            {/* OR UL HERE */}
 
             { countries.map( (country) => {
                 return (
 
 
                     <div key={country.alpha3Code} className="list-group-item list-group-item-action" >
+                        {/* or li instead of div here */}
 
                         <Link to={'/' + country.alpha3Code} > {country.name.common}
                         </Link>
